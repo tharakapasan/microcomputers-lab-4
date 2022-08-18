@@ -49,7 +49,7 @@ Water regulation is optimized using the water level control system, which means 
 
 •	soldering iron
 
-
+<img src="https://user-images.githubusercontent.com/109506588/185413210-c08e7abd-864e-40fa-b161-774bb7ed53bb.png" width=300>
 
 <img src="https://user-images.githubusercontent.com/109506588/185413775-6dc34581-9568-455a-a558-91cc511731d3.png" width=300>
 
