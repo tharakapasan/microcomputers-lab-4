@@ -53,6 +53,10 @@ Water regulation is optimized using the water level control system, which means 
 
 <img src="https://user-images.githubusercontent.com/109506588/185413775-6dc34581-9568-455a-a558-91cc511731d3.png" width=300>
 
+<img src="https://user-images.githubusercontent.com/109506588/185414965-ab482797-e3d8-4ac7-a4f2-0f378c521c0b.png" width=300>
+
+
+
 # PROCEDURE
 
 * First, PCB design of the circuit has been designed by the proteus software.
