@@ -57,6 +57,8 @@ Water regulation is optimized using the water level control system, which means 
 
 <img src="https://user-images.githubusercontent.com/109506588/185415330-ef3d706f-6761-4a0b-bd35-5be7bb428579.png" width=300>
 
+<img src="https://user-images.githubusercontent.com/109506588/185415884-57b330b9-6840-4885-a650-62f4f9047e27.png" width=300>
+
 
 
 
