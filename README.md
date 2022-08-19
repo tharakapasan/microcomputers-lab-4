@@ -86,6 +86,63 @@ The PIC microcontroller and the water pump control unit are connected by the pin
 
 In here, we use sensors as the switches.So, this is the hardware implementation of this project. We used arduio board 5v regulated power output to give power to the pic ic.Not only that, we used 5v 2A power pack to give power to the motors and motor module. According to the above table-1, if the switch 1 is on and switch 2 and 3 are off and then the motor 1 will on and motor 2 will off. If the switch 1 and 2 are on and switch 3 is off, then the motor 1 will on and motor 2 will off. If the all swiches are on, the the motor 1 will off and the motor 2 will on at first and then it will off after 500 miliseconds. 
 
+## The Code
+
+    #pragma config FOSC = HS        // Oscillator Selection bits (HS oscillator)
+    #pragma config WDTE = OFF       // Watchdog Timer Enable bit (WDT disabled)
+    #pragma config PWRTE = OFF      // Power-up Timer Enable bit (PWRT disabled)
+    #pragma config BOREN = OFF      // Brown-out Reset Enable bit (BOR disabled)
+    #pragma config LVP = OFF        // Low-Voltage (Single-Supply) In-Circuit Serial Programming Enable bit (RB3 is digital I/O, HV on MCLR must be used for programming)
+    #pragma config CPD = OFF        // Data EEPROM Memory Code Protection bit (Data EEPROM code protection off)
+    #pragma config WRT = OFF        // Flash Program Memory Write Enable bits (Write protection off; all program memory may be written to by EECON control)
+    #pragma config CP = OFF         // Flash Program Memory Code Protection bit (Code protection off)
+
+
+
+    #include <xc.h>
+    #include<htc.h> 
+
+    #define _XTAL_FREQ 20000000
+
+
+    void __interrupt() isr(void){
+    if(RB1 ==1 && RB2 ==1){
+        RC0 =0;
+        RC1 =1;
+        __delay_ms(500);
+        RC1 =0;
+    }
+    INTF =0;
+    }
+
+    void main (void){
+    INTF =0;
+    INTE =1;
+    GIE =1;
+    INTEDG =1;
+    
+    TRISB0 =1;  //SWITCH 3
+    TRISB1 =1;  //SWITCH 2
+    TRISB2 =1;  //SWITCH 1
+    TRISC0 =0;  //MOTOR 1
+    TRISC1 =0;  //MOTOR 2
+    
+    while(1){
+        if(RB2 ==1 && RB1 ==0 && RB0 ==0){
+            RC0 =1;
+        RC1 =0;
+        }
+         if(RB2 ==1 && RB1 ==1 && RB0 ==0){
+            RC0 =1;
+        RC1 =0;
+        }
+         if(RB2 ==0 && RB1 ==0 && RB0 ==0){
+            RC0 =0;
+        RC1 =0;
+        }
+    }
+    return();
+}
 
 
 
