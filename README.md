@@ -77,10 +77,12 @@ Water regulation is optimized using the water level control system, which means 
 
 <img src="https://user-images.githubusercontent.com/109506588/185416303-946067c4-e77c-4c3a-9877-55bf36839e9c.png" width=600>
 
-The suggested water level monitoring and control system's implementation consists of both hardware and software implementation. The power supply unit, oscillator unit and water pump are all covered by Former's implementation, as illustrated in Fig. 4. The infrared range sensor is implemented as seen in Fig. 2 and is used to monitor the water level within a tank. The IR sensor, when detects an object, it gives a logic low output and when it doesn’t detect any object, it gives a logic high. The PORTB pin 0, pin 1 and pin 2 are used to link the sensor to the microcontroller. So, in here, switch 1 is connected to the port B pin 0, switch 2 is connected to the port B pin 1 and switch 3 is connected to the port B pin 2. A water module device is used to implement the water level pump control unit, allowing low power circuits to switch a relatively high current/voltage.
+The suggested water level monitoring and control system's implementation consists of both hardware and software implementation. The power supply unit, oscillator unit and water pump are all covered by Former's implementation, as illustrated in Fig.2 . The infrared range sensor is implemented as seen in Fig. 4 and is used to monitor the water level within a tank. The IR sensor, when detects an object, it gives a logic low output and when it doesn’t detect any object, it gives a logic high. The PORTB pin 0, pin 1 and pin 2 are used to link the sensor to the microcontroller. So, in here, switch 1 is connected to the port B pin 0, switch 2 is connected to the port B pin 1 and switch 3 is connected to the port B pin 2. A water module device is used to implement the water level pump control unit, allowing low power circuits to switch a relatively high current/voltage.
 
 The PIC microcontroller and the water pump control unit are connected by the pin 0 and 1 on the PORTC. Depending on the water level, the microcontroller produces logic low or high on the pin 0 and 1 on PORT C to turn the pump on or off.
 
+
+In here, we use sensors as the switches.So, this is the hardware implementation of this project. According to the above table-1, if the switch 1 is on and switch 2 and 3 are off and then the motor 1 will on and motor 2 will off. If the switch 1 and 2 are on and switch 3 is off, then the motor 1 will on and motor 2 will off. If the all swiches are on, the the motor 1 will off and the motor 2 will on at first and then it will off after 500 miliseconds. 
 
 
 
