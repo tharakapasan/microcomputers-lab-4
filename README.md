@@ -6,7 +6,7 @@ The paper presents the design and implementation of the water level monitoring a
 
 # INTRODUCTION
 
-<img src="https://user-images.githubusercontent.com/109506588/184952529-a0aef32c-915b-4d82-9b5e-a58292d770b9.png" width=300>
+<img src="https://user-images.githubusercontent.com/109506588/184952529-a0aef32c-915b-4d82-9b5e-a58292d770b9.png" width=300 >
 
 The block diagram illustrated in FIG. 1 gives an overview of the proposed water level monitoring and control system, which consists of a PIC microcontroller as the heart of the system and the oscillator to generate the clock pulses needed to synchronize all the internal operations of the  PIC microcontroller, the power supply, to provide the necessary voltages for the proposed system, the water level sensor to measure the water level in a domestic tank, the water pump control unit to switch on or turn off the pump according to the water level. In the proposed system, the infrared sensor is used to measure the water level by measuring the distance between the water surface and the sensor and based on this distance, the amount of water inside the tank. can be determined.
 
