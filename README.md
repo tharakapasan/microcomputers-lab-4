@@ -82,7 +82,7 @@ The suggested water level monitoring and control system's implementation consist
 The PIC microcontroller and the water pump control unit are connected by the pin 0 and 1 on the PORTC. Depending on the water level, the microcontroller produces logic low or high on the pin 0 and 1 on PORT C to turn the pump on or off.
 
 
-<img src="https://user-images.githubusercontent.com/109506588/185543722-25e94ea2-1b8a-4313-825d-8db410cfe14e.png" width= 400>
+<img src="https://user-images.githubusercontent.com/109506588/185545953-be95371e-e73e-4663-8667-1c07dc31f8ac.png" width= 400>
 
 In here, we use sensors as the switches.So, this is the hardware implementation of this project. We used arduio board 5v regulated power output to give power to the pic ic.Not only that, we used 5v 2A power pack to give power to the motors and motor module. According to the above table-1, if the switch 1 is on and switch 2 and 3 are off and then the motor 1 will on and motor 2 will off. If the switch 1 and 2 are on and switch 3 is off, then the motor 1 will on and motor 2 will off. If the all swiches are on, the the motor 1 will off and the motor 2 will on at first and then it will off after 500 miliseconds. 
 
