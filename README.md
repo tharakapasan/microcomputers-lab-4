@@ -49,15 +49,15 @@ Water regulation is optimized using the water level control system, which means 
 
 •	soldering iron
 
-<img src="https://user-images.githubusercontent.com/109506588/185413210-c08e7abd-864e-40fa-b161-774bb7ed53bb.png" width=300>
+<img src="https://user-images.githubusercontent.com/109506588/185413210-c08e7abd-864e-40fa-b161-774bb7ed53bb.png" width=500>
 
-<img src="https://user-images.githubusercontent.com/109506588/185413775-6dc34581-9568-455a-a558-91cc511731d3.png" width=300>
+<img src="https://user-images.githubusercontent.com/109506588/185413775-6dc34581-9568-455a-a558-91cc511731d3.png" width=500>
 
-<img src="https://user-images.githubusercontent.com/109506588/185414965-ab482797-e3d8-4ac7-a4f2-0f378c521c0b.png" width=300>
+<img src="https://user-images.githubusercontent.com/109506588/185414965-ab482797-e3d8-4ac7-a4f2-0f378c521c0b.png" width=500>
 
-<img src="https://user-images.githubusercontent.com/109506588/185415330-ef3d706f-6761-4a0b-bd35-5be7bb428579.png" width=300>
+<img src="https://user-images.githubusercontent.com/109506588/185415330-ef3d706f-6761-4a0b-bd35-5be7bb428579.png" width=500>
 
-<img src="https://user-images.githubusercontent.com/109506588/185415884-57b330b9-6840-4885-a650-62f4f9047e27.png" width=300>
+<img src="https://user-images.githubusercontent.com/109506588/185415884-57b330b9-6840-4885-a650-62f4f9047e27.png" width=500>
 
 
 # PROCEDURE
@@ -84,7 +84,7 @@ The PIC microcontroller and the water pump control unit are connected by the pin
 
 <img src="https://user-images.githubusercontent.com/109506588/185543722-25e94ea2-1b8a-4313-825d-8db410cfe14e.png" width= 400>
 
-In here, we use sensors as the switches.So, this is the hardware implementation of this project. According to the above table-1, if the switch 1 is on and switch 2 and 3 are off and then the motor 1 will on and motor 2 will off. If the switch 1 and 2 are on and switch 3 is off, then the motor 1 will on and motor 2 will off. If the all swiches are on, the the motor 1 will off and the motor 2 will on at first and then it will off after 500 miliseconds. 
+In here, we use sensors as the switches.So, this is the hardware implementation of this project. We used arduio board 5v regulated power output to give power to the pic ic.Not only that, we used 5v 2A power pack to give power to the motors and motor module. According to the above table-1, if the switch 1 is on and switch 2 and 3 are off and then the motor 1 will on and motor 2 will off. If the switch 1 and 2 are on and switch 3 is off, then the motor 1 will on and motor 2 will off. If the all swiches are on, the the motor 1 will off and the motor 2 will on at first and then it will off after 500 miliseconds. 
 
 
 
