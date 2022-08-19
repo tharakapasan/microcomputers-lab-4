@@ -75,7 +75,7 @@ Water regulation is optimized using the water level control system, which means 
 
 # DISCUSSION
 
-<img src="https://user-images.githubusercontent.com/109506588/185416303-946067c4-e77c-4c3a-9877-55bf36839e9c.png" width=300>
+<img src="https://user-images.githubusercontent.com/109506588/185416303-946067c4-e77c-4c3a-9877-55bf36839e9c.png" width=600>
 
 The suggested water level monitoring and control system's implementation consists of both hardware and software implementation. The power supply unit, oscillator unit and water pump are all covered by Former's implementation, as illustrated in Fig. 4. The infrared range sensor is implemented as seen in Fig. 2 and is used to monitor the water level within a tank. The IR sensor, when detects an object, it gives a logic low output and when it doesn’t detect any object, it gives a logic high. The PORTB pin 0, pin 1 and pin 2 are used to link the sensor to the microcontroller. So, in here, switch 1 is connected to the port B pin 0, switch 2 is connected to the port B pin 1 and switch 3 is connected to the port B pin 2. A water module device is used to implement the water level pump control unit, allowing low power circuits to switch a relatively high current/voltage.
 
